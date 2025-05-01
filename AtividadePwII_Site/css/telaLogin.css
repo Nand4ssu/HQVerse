@@ -1,0 +1,68 @@
+.container-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+body{
+    /*Alterando a cor para deixar semelhante ao Cadastro*/
+    background: linear-gradient(90deg,  #546eb4, #27396b);
+}
+
+.formulario{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+     /*O box shadow adiciona uma sombra suave na "caixa"*/
+     width: 30%; 
+
+}
+form h3{
+    /*Estilização do titulo*/
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 20px;
+    font-family: 'Geneva';
+    font-size: 35px;
+    color:#546eb4;
+    
+}
+input[type="text"], input[type="password"]{
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #d0d9e6;
+    font-size: 15px;
+    margin-left: 23%;
+}
+
+input[type="submit"]{
+    width: 32%;
+    padding: 10px;
+    background-color: #27396b;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    font-family: Tahoma;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 34%;
+}
+a{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Times;
+    font-size: 15px;
+}
+a:hover{
+    color:  #76458a;
+}
+input[type="submit"]:hover{
+    background-color: #a3b2cf;
+}

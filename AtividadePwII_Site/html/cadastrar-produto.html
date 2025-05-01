@@ -1,0 +1,31 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/> 
+        <title>Tela de Cadastro de Produto</title>
+        <link rel="stylesheet" type="text/css" href="../css/cadastro-produto.css">
+        <script src="../js/cadastro-produto.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </head>
+    <body>
+        <div class="container-principal">
+            <div class="formulario">
+                <form id="form-login" action="../html/home.html" method="POST" onsubmit="salvar(event)">
+                    <!--Nesta parte de cadastrar produto, gostaria de ter feito mais coisas.-->
+                    <h2> Cadastro de HQ's </h2>
+                    <input type="text" name="nome" placeholder="Nome do Produto:" id="nome" required="true" minlength="3" maxlength="35">
+
+                    <input type="text" name="editora" placeholder="Digite a editora da HQ:" id="editora" required="true" minlength="3" maxlength="50">
+                    <!--Mudei para editora por ser um e-commerce de HQ's, ou seja, ao inves de ter uma marca, tem uma editora-->
+                    <input type="text" name="preco" placeholder="Preço da HQ:" id="preco" required="true" minlength="3" maxlength="35">
+
+                    <input type="text" name="descricao" placeholder="Sinopse da HQ:" id="descricao" required="true" minlength="3" maxlength="8">
+                    <br>
+                    <br>
+                    <input type="submit" value="Salvar o Produto." onclick="salvar();return false;">   
+                    <br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

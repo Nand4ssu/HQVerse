@@ -1,0 +1,42 @@
+<html lang="pt-br">
+    <head>
+        <!--Serve par setar o UNICODE do site para o usado em PT-BR-->
+        <meta charset="UTF-8"/> 
+        <title>Tela de Cadastro</title>
+        
+        <!--vinculando a tela, com o CSS para estilizar a página-->
+        <link rel="stylesheet" type="text/css" href="../css/cadastrar.css">
+
+        <!--vinculando tela com o script que vamos criar as funcionalidades-->
+        <script src="../js/cadastrar.js"></script>
+
+        <!-- Para usar o  SweetAlert2 CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </head>
+    <body>
+        <!--Essa div, representa onde todo o conteúdo do site vai ficar-->
+        <div class="container-principal">
+            <!-- aqui é o espaço onde vamos criar o formulário-->
+            <div class="formulario">
+                <form id="form-login" action="../php/cadastrar-usuario.php" method="POST">
+                    <h2>Formulário de Cadastro</h2>
+                    <!-- adicionando campos do formulário-->
+                    <input type="text" name="nome" placeholder="Nome:" id="nome" required="true" minlength="3" maxlength="35">
+
+                    <input type="email" name="email" placeholder="Email:" id="email" required="true" minlength="3" maxlength="50">
+
+                    <input type="text" name="usuario" placeholder="Usuario:" id="usuario" required="true" minlength="3" maxlength="35">
+
+                    <input type="password" name="senha" placeholder="Senha:" id="senha" required="true" minlength="3" maxlength="8">
+                    <br>
+                    <br>
+                    <!--adicionando botão que irá enviar as informações do site -->
+                    <input type="submit" value="Entrar">   
+                    <br>
+                </form>
+                <a href="../telaLogin.html">Já possui cadastro? Faça o login.</a>
+            </div>
+        </div>
+    </body>
+</html>
